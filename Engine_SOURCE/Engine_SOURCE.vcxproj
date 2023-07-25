@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{99c9b598-a963-4c5d-9832-b53b481d193f}</ProjectGuid>
+    <RootNamespace>EngineSOURCE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)fmodL.dll" "$(SolutionDir)\x64\Debug\"
+copy "$(SolutionDir)FW1FontWrapperL.dll" "$(SolutionDir)\x64\Debug\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)fmodL.dll" "$(SolutionDir)\x64\Debug\"
+copy "$(SolutionDir)fmodstudioL.dll" "$(SolutionDir)\x64\Debug\"
+copy "$(SolutionDir)FW1FontWrapperL.dll" "$(SolutionDir)\x64\Debug\"
+copy "$(SolutionDir)fmod.dll" "$(SolutionDir)\x64\Release\"
+copy "$(SolutionDir)FW1FontWrapper.dll" "$(SolutionDir)\x64\Release\"
+copy "$(SolutionDir)fmodstudio.dll" "$(SolutionDir)\x64\Release\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicGunScript.h" />
+    <ClInclude Include="BlackMapObj.h" />
+    <ClInclude Include="BlackMapScr.h" />
+    <ClInclude Include="BlankBulletObj.h" />
+    <ClInclude Include="BlankBulletScr.h" />
+    <ClInclude Include="BlankBullet_UI.h" />
+    <ClInclude Include="BoosDoorObj.h" />
+    <ClInclude Include="BoosDoorScr.h" />
+    <ClInclude Include="BossBulletObj.h" />
+    <ClInclude Include="BossBulletScr.h" />
+    <ClInclude Include="BossHpBarObj.h" />
+    <ClInclude Include="BossHpBarScr.h" />
+    <ClInclude Include="BossHpUIObj.h" />
+    <ClInclude Include="BossHpUIScr.h" />
+    <ClInclude Include="BossSceneObj.h" />
+    <ClInclude Include="BossSceneScr.h" />
+    <ClInclude Include="BullatScr.h" />
+    <ClInclude Include="Bullet_Kin.h" />
+    <ClInclude Include="Bullet_Kin_Gun.h" />
+    <ClInclude Include="Bullet_Kin_Gun_Scr.h" />
+    <ClInclude Include="chAnimation.h" />
+    <ClInclude Include="chAnimator.h" />
+    <ClInclude Include="chApplication.h" />
+    <ClInclude Include="CharacterBase.h" />
+    <ClInclude Include="chasePlayerOBJ.h" />
+    <ClInclude Include="chasePlayerSCR.h" />
+    <ClInclude Include="chAudioClip.h" />
+    <ClInclude Include="chAudioListener.h" />
+    <ClInclude Include="chAudioSource.h" />
+    <ClInclude Include="chBaseRenderer.h" />
+    <ClInclude Include="chBoss.h" />
+    <ClInclude Include="chBullet.h" />
+    <ClInclude Include="chBulletPool.h" />
+    <ClInclude Include="chBulletScr.h" />
+    <ClInclude Include="chCamera.h" />
+    <ClInclude Include="chCameraScript.h" />
+    <ClInclude Include="chColider.h" />
+    <ClInclude Include="chCollisionManager.h" />
+    <ClInclude Include="chCollider2D.h" />
+    <ClInclude Include="chCollider3D.h" />
+    <ClInclude Include="chComponent.h" />
+    <ClInclude Include="chComputeShader.h" />
+    <ClInclude Include="chConstantBuffer.h" />
+    <ClInclude Include="chEntity.h" />
+    <ClInclude Include="chEnums.h" />
+    <ClInclude Include="chFadeEffect.h" />
+    <ClInclude Include="chFightSabreObject.h" />
+    <ClInclude Include="chFightSabreScr.h" />
+    <ClInclude Include="chFmod.h" />
+    <ClInclude Include="chGameObject.h" />
+    <ClInclude Include="chGenericAnimator.h" />
+    <ClInclude Include="chGraphicDevice_DX11.h" />
+    <ClInclude Include="chGraphics.h" />
+    <ClInclude Include="chGridScript.h" />
+    <ClInclude Include="chGun.h" />
+    <ClInclude Include="chHeart_UI.h" />
+    <ClInclude Include="chInput.h" />
+    <ClInclude Include="chLayer.h" />
+    <ClInclude Include="chLight.h" />
+    <ClInclude Include="chMainMenuScene.h" />
+    <ClInclude Include="chMapCollider.h" />
+    <ClInclude Include="chMaterial.h" />
+    <ClInclude Include="chMath.h" />
+    <ClInclude Include="chMesh.h" />
+    <ClInclude Include="chMeshRenderer.h" />
+    <ClInclude Include="chMonster.h" />
+    <ClInclude Include="chMouseCursorScript.h" />
+    <ClInclude Include="chObject.h" />
+    <ClInclude Include="chOtherPlayerScript.h" />
+    <ClInclude Include="chPaintShader.h" />
+    <ClInclude Include="chParticleShader.h" />
+    <ClInclude Include="chParticleSystem.h" />
+    <ClInclude Include="chPistol.h" />
+    <ClInclude Include="chPistolScr.h" />
+    <ClInclude Include="chPlayer.h" />
+    <ClInclude Include="chPlayerScr.h" />
+    <ClInclude Include="chPlayerScript.h" />
+    <ClInclude Include="chPlayerHand.h" />
+    <ClInclude Include="chPlayScene.h" />
+    <ClInclude Include="chPrefab.h" />
+    <ClInclude Include="chRenderer.h" />
+    <ClInclude Include="chResource.h" />
+    <ClInclude Include="chResources.h" />
+    <ClInclude Include="chRigidbody.h" />
+    <ClInclude Include="chScene.h" />
+    <ClInclude Include="chSceneManager.h" />
+    <ClInclude Include="chScript.h" />
+    <ClInclude Include="chShader.h" />
+    <ClInclude Include="chStructedBuffer.h" />
+    <ClInclude Include="chtestBulletscr.h" />
+    <ClInclude Include="chTestScene.h" />
+    <ClInclude Include="chTexture.h" />
+    <ClInclude Include="chTime.h" />
+    <ClInclude Include="chTitleScene.h" />
+    <ClInclude Include="chTransform.h" />
+    <ClInclude Include="OtherPlayer.h" />
+    <ClInclude Include="CommonInclude.h" />
+    <ClInclude Include="Convict.h" />
+    <ClInclude Include="ConvictBlankBulletObj.h" />
+    <ClInclude Include="ConvictBlankBulletScr.h" />
+    <ClInclude Include="ConvictMove.h" />
+    <ClInclude Include="CubeScr.h" />
+    <ClInclude Include="DoorColliderObj.h" />
+    <ClInclude Include="DoorColliderScr.h" />
+    <ClInclude Include="DoorObj.h" />
+    <ClInclude Include="DoorRoomControl.h" />
+    <ClInclude Include="DoorScr.h" />
+    <ClInclude Include="EndingObj.h" />
+    <ClInclude Include="EndingScr.h" />
+    <ClInclude Include="EventObj.h" />
+    <ClInclude Include="EventScr.h" />
+    <ClInclude Include="FightSabreBoxScr.h" />
+    <ClInclude Include="FightSabreBullet.h" />
+    <ClInclude Include="FightSabreBulletScr.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="chEngine.h" />
+    <ClInclude Include="chSpriteRenderer.h" />
+    <ClInclude Include="GameNet.h" />
+    <ClInclude Include="GameNetBase.h" />
+    <ClInclude Include="GameNetClient.h" />
+    <ClInclude Include="GameNetDispatcher.h" />
+    <ClInclude Include="GameNetObject.h" />
+    <ClInclude Include="GameNetPacket.h" />
+    <ClInclude Include="GameNetSerializer.h" />
+    <ClInclude Include="GameNetServer.h" />
+    <ClInclude Include="GameNetString.h" />
+    <ClInclude Include="GameNetThread.h" />
+    <ClInclude Include="GlobalPacket.h" />
+    <ClInclude Include="HeartObj.h" />
+    <ClInclude Include="HeartScr.h" />
+    <ClInclude Include="Heart_Scr.h" />
+    <ClInclude Include="ItemBox.h" />
+    <ClInclude Include="ItemBoxScr.h" />
+    <ClInclude Include="LampObj.h" />
+    <ClInclude Include="LampScr.h" />
+    <ClInclude Include="mainPlayer.h" />
+    <ClInclude Include="MapObject.h" />
+    <ClInclude Include="MiniMapPlayerObj.h" />
+    <ClInclude Include="MiniMapObj.h" />
+    <ClInclude Include="MiniMapPlayerScr.h" />
+    <ClInclude Include="MiniMapScr.h" />
+    <ClInclude Include="MoneyObj.h" />
+    <ClInclude Include="MoneyScr.h" />
+    <ClInclude Include="MonsterBase.h" />
+    <ClInclude Include="MonsterBullet2Obj.h" />
+    <ClInclude Include="MonsterBullet2Scr.h" />
+    <ClInclude Include="MonsterBulletObj.h" />
+    <ClInclude Include="MonsterBulletScr.h" />
+    <ClInclude Include="PacketEnum.h" />
+    <ClInclude Include="ReloadBarObj.h" />
+    <ClInclude Include="ReloadBarScr.h" />
+    <ClInclude Include="ReloadButtonObj.h" />
+    <ClInclude Include="ReloadButtonScr.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ServerCharacterBase.h" />
+    <ClInclude Include="YourPlayer.h" />
+    <ClInclude Include="ServerScene.h" />
+    <ClInclude Include="ServerToClient.h" />
+    <ClInclude Include="TableObject.h" />
+    <ClInclude Include="TableScr.h" />
+    <ClInclude Include="TelePortMiniObj.h" />
+    <ClInclude Include="TelePortMiniScr.h" />
+    <ClInclude Include="TelePortObj.h" />
+    <ClInclude Include="TelePortScr.h" />
+    <ClInclude Include="YourPlayerMove.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicGunScript.cpp" />
+    <ClCompile Include="BlackMapObj.cpp" />
+    <ClCompile Include="BlackMapScr.cpp" />
+    <ClCompile Include="BlankBulletObj.cpp" />
+    <ClCompile Include="BlankBulletScr.cpp" />
+    <ClCompile Include="BlankBullet_UI.cpp" />
+    <ClCompile Include="BoosDoorObj.cpp" />
+    <ClCompile Include="BoosDoorScr.cpp" />
+    <ClCompile Include="BossBulletObj.cpp" />
+    <ClCompile Include="BossBulletScr.cpp" />
+    <ClCompile Include="BossHpBarObj.cpp" />
+    <ClCompile Include="BossHpBarScr.cpp" />
+    <ClCompile Include="BossHpUIObj.cpp" />
+    <ClCompile Include="BossHpUIScr.cpp" />
+    <ClCompile Include="BossSceneObj.cpp" />
+    <ClCompile Include="BossSceneScr.cpp" />
+    <ClCompile Include="BullatScr.cpp" />
+    <ClCompile Include="Bullet_Kin.cpp" />
+    <ClCompile Include="Bullet_Kin_Gun.cpp" />
+    <ClCompile Include="Bullet_Kin_Gun_Scr.cpp" />
+    <ClCompile Include="chAnimation.cpp" />
+    <ClCompile Include="chAnimator.cpp" />
+    <ClCompile Include="chApplication.cpp" />
+    <ClCompile Include="CharacterBase.cpp" />
+    <ClCompile Include="chasePlayerOBJ.cpp" />
+    <ClCompile Include="chasePlayerSCR.cpp" />
+    <ClCompile Include="chAudioClip.cpp" />
+    <ClCompile Include="chAudioListener.cpp" />
+    <ClCompile Include="chAudioSource.cpp" />
+    <ClCompile Include="chBaseRenderer.cpp" />
+    <ClCompile Include="chBoss.cpp" />
+    <ClCompile Include="chBullet.cpp" />
+    <ClCompile Include="chBulletPool.cpp" />
+    <ClCompile Include="chBulletScr.cpp" />
+    <ClCompile Include="chCamera.cpp" />
+    <ClCompile Include="chCameraScript.cpp" />
+    <ClCompile Include="chColider.cpp" />
+    <ClCompile Include="chCollisionManager.cpp" />
+    <ClCompile Include="chCollider2D.cpp" />
+    <ClCompile Include="chCollider3D.cpp" />
+    <ClCompile Include="chComponent.cpp" />
+    <ClCompile Include="chComputeShader.cpp" />
+    <ClCompile Include="chConstantBuffer.cpp" />
+    <ClCompile Include="chEntity.cpp" />
+    <ClCompile Include="chFadeEffect.cpp" />
+    <ClCompile Include="chFightSabreObject.cpp" />
+    <ClCompile Include="chFightSabreScr.cpp" />
+    <ClCompile Include="chFmod.cpp" />
+    <ClCompile Include="chGenericAnimator.cpp" />
+    <ClCompile Include="chGraphicDevice_DX11.cpp" />
+    <ClCompile Include="chGridScript.cpp" />
+    <ClCompile Include="chGun.cpp" />
+    <ClCompile Include="chHeart_UI.cpp" />
+    <ClCompile Include="chInput.cpp" />
+    <ClCompile Include="chLayer.cpp" />
+    <ClCompile Include="chLight.cpp" />
+    <ClCompile Include="chMainMenuScene.cpp" />
+    <ClCompile Include="chMapCollider.cpp" />
+    <ClCompile Include="chMaterial.cpp" />
+    <ClCompile Include="chMath.cpp" />
+    <ClCompile Include="chMesh.cpp" />
+    <ClCompile Include="chMeshRenderer.cpp" />
+    <ClCompile Include="chMonster.cpp" />
+    <ClCompile Include="chMouseCursorScript.cpp" />
+    <ClCompile Include="chOtherPlayerScript.cpp" />
+    <ClCompile Include="chPaintShader.cpp" />
+    <ClCompile Include="chParticleShader.cpp" />
+    <ClCompile Include="chParticleSystem.cpp" />
+    <ClCompile Include="chPistol.cpp" />
+    <ClCompile Include="chPistolScr.cpp" />
+    <ClCompile Include="chPlayer.cpp" />
+    <ClCompile Include="chPlayerScr.cpp" />
+    <ClCompile Include="chPlayerScript.cpp" />
+    <ClCompile Include="chPlayerHand.cpp" />
+    <ClCompile Include="chPlayScene.cpp" />
+    <ClCompile Include="chPrefab.cpp" />
+    <ClCompile Include="chRenderer.cpp" />
+    <ClCompile Include="chResource.cpp" />
+    <ClCompile Include="chResources.cpp" />
+    <ClCompile Include="chRigidbody.cpp" />
+    <ClCompile Include="chScene.cpp" />
+    <ClCompile Include="chSceneManager.cpp" />
+    <ClCompile Include="chScript.cpp" />
+    <ClCompile Include="chShader.cpp" />
+    <ClCompile Include="chStructedBuffer.cpp" />
+    <ClCompile Include="chtestBulletscr.cpp" />
+    <ClCompile Include="chTestScene.cpp" />
+    <ClCompile Include="chTexture.cpp" />
+    <ClCompile Include="chTime.cpp" />
+    <ClCompile Include="chTitleScene.cpp" />
+    <ClCompile Include="chTransform.cpp" />
+    <ClCompile Include="chGameObject.cpp" />
+    <ClCompile Include="OtherPlayer.cpp" />
+    <ClCompile Include="Convict.cpp" />
+    <ClCompile Include="ConvictBlankBulletObj.cpp" />
+    <ClCompile Include="ConvictBlankBulletScr.cpp" />
+    <ClCompile Include="ConvictMove.cpp" />
+    <ClCompile Include="CubeScr.cpp" />
+    <ClCompile Include="DoorColliderObj.cpp" />
+    <ClCompile Include="DoorColliderScr.cpp" />
+    <ClCompile Include="DoorObj.cpp" />
+    <ClCompile Include="DoorRoomControl.cpp" />
+    <ClCompile Include="DoorScr.cpp" />
+    <ClCompile Include="EndingObj.cpp" />
+    <ClCompile Include="EndingScr.cpp" />
+    <ClCompile Include="Engine_SOURCE.cpp" />
+    <ClCompile Include="chSpriteRenderer.cpp" />
+    <ClCompile Include="EventObj.cpp" />
+    <ClCompile Include="EventScr.cpp" />
+    <ClCompile Include="FightSabreBoxScr.cpp" />
+    <ClCompile Include="FightSabreBullet.cpp" />
+    <ClCompile Include="FightSabreBulletScr.cpp" />
+    <ClCompile Include="GameNet.cpp" />
+    <ClCompile Include="GameNetBase.cpp" />
+    <ClCompile Include="GameNetClient.cpp" />
+    <ClCompile Include="GameNetDispatcher.cpp" />
+    <ClCompile Include="GameNetObject.cpp" />
+    <ClCompile Include="GameNetPacket.cpp" />
+    <ClCompile Include="GameNetSerializer.cpp" />
+    <ClCompile Include="GameNetServer.cpp" />
+    <ClCompile Include="GameNetString.cpp" />
+    <ClCompile Include="GameNetThread.cpp" />
+    <ClCompile Include="GlobalPacket.cpp" />
+    <ClCompile Include="HeartObj.cpp" />
+    <ClCompile Include="HeartScr.cpp" />
+    <ClCompile Include="Heart_Scr.cpp" />
+    <ClCompile Include="ItemBox.cpp" />
+    <ClCompile Include="ItemBoxScr.cpp" />
+    <ClCompile Include="LampObj.cpp" />
+    <ClCompile Include="LampScr.cpp" />
+    <ClCompile Include="mainPlayer.cpp" />
+    <ClCompile Include="MapObject.cpp" />
+    <ClCompile Include="MiniMapPlayerObj.cpp" />
+    <ClCompile Include="MiniMapObj.cpp" />
+    <ClCompile Include="MiniMapPlayerScr.cpp" />
+    <ClCompile Include="MiniMapScr.cpp" />
+    <ClCompile Include="MoneyObj.cpp" />
+    <ClCompile Include="MoneyScr.cpp" />
+    <ClCompile Include="MonsterBase.cpp" />
+    <ClCompile Include="MonsterBullet2Obj.cpp" />
+    <ClCompile Include="MonsterBullet2Scr.cpp" />
+    <ClCompile Include="MonsterBulletObj.cpp" />
+    <ClCompile Include="MonsterBulletScr.cpp" />
+    <ClCompile Include="ReloadBarObj.cpp" />
+    <ClCompile Include="ReloadBarScr.cpp" />
+    <ClCompile Include="ReloadButtonObj.cpp" />
+    <ClCompile Include="ReloadButtonScr.cpp" />
+    <ClCompile Include="ServerCharacterBase.cpp" />
+    <ClCompile Include="YourPlayer.cpp" />
+    <ClCompile Include="ServerScene.cpp" />
+    <ClCompile Include="ServerToClient.cpp" />
+    <ClCompile Include="TableObject.cpp" />
+    <ClCompile Include="TableScr.cpp" />
+    <ClCompile Include="TelePortMiniObj.cpp" />
+    <ClCompile Include="TelePortMiniScr.cpp" />
+    <ClCompile Include="TelePortObj.cpp" />
+    <ClCompile Include="TelePortScr.cpp" />
+    <ClCompile Include="YourPlayerMove.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chMath.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine_SOURCE.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

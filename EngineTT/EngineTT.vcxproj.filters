@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{6f661e82-5ee9-4dec-a800-ce3edc266130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{de5e04fe-559e-4f75-8b24-266c5a3d937c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{4902d164-367a-47c1-b007-f40ace5a9558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{10a15626-5acb-4f17-9df7-ccddbf6f9d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{ab168d9d-3170-4a9c-8b73-1b2f753e26bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{f5f980d2-400e-4290-a4ce-89911aa3982d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Object">
+      <UniqueIdentifier>{301fc4ff-1e3e-4c60-b1c0-a19a37b56fe4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTT.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="chEditor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="memoeyLeak.h" />
+    <ClInclude Include="chDebugObject.h">
+      <Filter>Editor\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="chEditorObject.h">
+      <Filter>Editor\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="chWidget.h">
+      <Filter>Widget</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EngineTT.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="EngineTT.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="chEditor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="chDebugObject.cpp">
+      <Filter>Editor\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="chEditorObject.cpp">
+      <Filter>Editor\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="chWidget.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
